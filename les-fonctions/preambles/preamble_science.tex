@@ -10,6 +10,7 @@
 \usepackage{amsmath,amsfonts,amsthm,amssymb}
 \usepackage{mdframed}
 \usepackage{pgfplots}
+\usepackage{tcolorbox}
 \hypersetup{
 	colorlinks = true,
 	linkcolor=blue
@@ -68,6 +69,15 @@
 \begin{proof} #1
 \end{proof}
 \end{mdframed}}
+\newcommand{\definition}[1]{
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=Définition]
+#1
+\end{tcolorbox}}
+\newcommand{\property}[1]{
+\begin{tcolorbox}[colback=red!5!white,colframe=blue!50!black,title=propriétés]
+#1
+\end{tcolorbox}}
+
 %% A few more important commands:
 
 %% You should start every proof with \begin{proof} and end it with \end{proof}.  
