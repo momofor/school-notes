@@ -1,0 +1,43 @@
+\usepackage{fontspec}
+\usepackage{mathbbol}
+\usepackage{mathtools}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{cleveref}
+\usepackage{titlesec}
+\usepackage{babel}
+\usepackage{tkz-tab}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+
+\usepgfplotslibrary{external}
+\tikzexternalize[prefix=cache/]
+
+\pgfplotsset{compat=1.18}
+\renewcommand{\thesection}{\Roman{section}}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection-}{.5em}{}
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection-}{.5em}{}
+
+\usepackage[
+    protrusion=true,
+    activate={true,nocompatibility},
+    final,
+    tracking=true,
+    factor=1100]
+	{microtype}
+\SetTracking{encoding={*}, shape=sc}{40}
+
+\usepackage[a4paper,bottom=0.75in]{geometry}
+
+
+\newcounter{queestionNumber}
+\setcounter{queestionNumber}{0}
+\newcommand{\qs}[1]{
+	Problem Number: \arabic{queestionNumber}
+
+	{#1}
+	\addtocounter{queestionNumber}{1}
+}

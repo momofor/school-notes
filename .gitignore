@@ -1,0 +1,9 @@
+*.fls
+*.aux
+*auxlock
+*.fdb_latexmk
+*.log
+*.synctex.gz
+*.dpth
+*.md5
+

@@ -1,0 +1,13 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\numberline {I}Definitions }{2}{}%
+\contentsline {subsection}{\numberline {I.1}Definition de la fonction numerique}{2}{}%
+\contentsline {subsection}{\numberline {I.2}Definiton de domaine de definition}{2}{}%
+\contentsline {section}{\numberline {II}Domaines de definitions de fonctions usuelles}{2}{}%
+\contentsline {section}{\numberline {III}Les tableaus de variations des fonctions \\usuelles:}{3}{}%
+\contentsline {subsection}{\numberline {III.1}Tableau de variations de fonction polynome de degrée \\2:}{3}{}%
+\contentsline {subsection}{\numberline {III.2}Tableau de variations d'une fonction homographique:}{3}{}%
+\contentsline {subsection}{\numberline {III.3}Tableau de variations d'une fonction $x \rightarrow \sqrt {x + a } $}{4}{}%
+\contentsline {section}{\numberline {IV}Les courbes de fonctions usuelles}{4}{}%
+\contentsline {subsection}{\numberline {IV.1}La courbe du fonction polynome de degrée 2}{4}{}%
+\contentsline {subsection}{\numberline {IV.2}La courbe du fonction homographique:}{4}{}%
+\contentsline {subsection}{\numberline {IV.3}La courbe du fonction $x \rightarrow \sqrt {x + a }$}{5}{}%
