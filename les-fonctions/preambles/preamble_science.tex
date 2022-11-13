@@ -3,12 +3,18 @@
 \usepackage{mathtools}
 \usepackage{array}
 \usepackage{booktabs}
-\usepackage{cleveref}
+\usepackage{hyperref,cleveref}
 \usepackage{titlesec}
 \usepackage{babel}
 \usepackage{tkz-tab}
-\usepackage{amssymb}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{mdframed}
 \usepackage{pgfplots}
+\hypersetup{
+	colorlinks = true,
+	linkcolor=blue
+}
+
 
 \usepgfplotslibrary{external}
 \tikzexternalize[prefix=cache/]
@@ -41,3 +47,45 @@
 	{#1}
 	\addtocounter{queestionNumber}{1}
 }
+
+
+%% One of the nicest things about LaTeX is you can create custom macros. If  there is a long-ish expression that you will write often, it is nice to give it a shorter command.
+%% For our common number systems.
+\newcommand{\RR}{\mathbb{R}} %% The blackboard-bold R that you have seen used for real numbers is typeset by $\mathbb{R}$. This macro means that $\RR$ will yield the same result, and is much shorter to type.
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}} 
+\newcommand{\QQ}{\mathbb{Q}}
+
+%% Your macros can even accept arguments. 
+\newcommand\set[1]{\left\lbrace #1 \right\rbrace} %% In mathmode, if you write \set{STUFF}, then this will output {STUFF}, i.e. STUFF inside of a set
+\newcommand\abs[1]{\left| #1 \right|} %% This will do the same but with vertical bars. I.e., \abs{STUFF} gives |STUFF|
+\newcommand\parens[1]{\left( #1 \right)} %% Similar. \parens{STUFF} gives (STUFF)
+\newcommand\brac[1]{\left[ #1 \right]} %% Similar. \brac{STUFF} gives [STUFF]
+\newcommand\sol[1]{\begin{mdframed}
+\emph{Solution.} #1
+\end{mdframed}}
+\newcommand\solproof[1]{\begin{mdframed}
+\begin{proof} #1
+\end{proof}
+\end{mdframed}}
+%% A few more important commands:
+
+%% You should start every proof with \begin{proof} and end it with \end{proof}.  
+%%
+%% Code inside single dollar signs will give in-line mathmode. I.e., $f(x) = x^2$ 
+%% Code \[ \] will give mathmode centered on its own line.
+%%
+%% Other common commands:
+%%	\begin{align*} and \end{align*} -- Good for multiline equations
+%%	\begin{align} and \end{align} -- Same as above, but it will number the equations for easy reference
+%%	\emph{italicized text here} and \textbf{bold text here} are also useful.
+%%
+%% Some very specific mathmode commands and their meanings:
+%%	x \in A -- x is an element of A
+%%	x \notin A -- x is not an element of A
+%%	A \subseteq B -- A is a subset of B
+%%	A \subsetneq B -- A is a proper subset of B
+%%	x \equiv y \pmod{n} -- x is congruent to y mod n. 
+%%	x \geq y and x \leq y -- Greater than or equal to and less than or equal to 
+%%
+%% You'll probably find lots of relevant commands in the question prompts. Also Google is your friend!
