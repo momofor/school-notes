@@ -20,11 +20,11 @@ $\forall x \in \RR$ admet \textbf{au plus} une image dans $\RR$}
 \subsection{Definiton de domaine de definition}
 \definition{L'ensemble des elements de $\RR$ qui ont des images par $f$ sont appelés
 l'ensemble de definition de $f$ et on le note $D_f$ ou $D$
-et On a:\\
-$D_f = \set{x \in \RR/f(x) \in \RR}$}
+et On a:
+\center $D_f = \set{x \in \RR/f(x) \in \RR}$}
 \section{Domaines de definitions de fonctions usuelles}
-On a des domaines de definitions usuelles comme: 
 \property{
+On a des domaines de définition usuelles comme:
 \begin{itemize}
 	\item $D_f = \RR$ si la fonction est une fonction polynome écrit sous la forme:\\
 $f:x \rightarrow ax^2 + bx + c $
@@ -32,7 +32,7 @@ $f:x \rightarrow ax^2 + bx + c $
 	$f:x \rightarrow \frac{ax+b}{x} $
 \item $D_f = \brac{-a;+\infty}$ si la fonction est une foction écrit sous la forme: \\
 	$f:x  \rightarrow \sqrt{x + a} $
-\item $D_f = \RR - \set{ \frac{-d}{c}} $ si la fonction est une fonction homogene écrit sous la forme:\\
+\item $D_f = \RR - \set{ \frac{-d}{c}} $ si la fonction est une fonction homographique écrit sous la forme:\\
 	$f:x \rightarrow \displaystyle\frac{ax + b}{cx + d} $
 \end{itemize}}
 
@@ -40,7 +40,7 @@ $f:x \rightarrow ax^2 + bx + c $
 \section{Les tableaus de variations des fonctions \\usuelles:}
 \subsection{Tableau de variations de fonction polynome de degrée \\2:}
 \begin{itemize}
-\item  Si $x \geq 0$:
+\center \item  Si $x \geq 0$:
 
 \begin{tikzpicture}
    \tkzTabInit[lgt=3]
@@ -64,15 +64,14 @@ $f:x \rightarrow ax^2 + bx + c $
 
 
 \subsection{Tableau de variations d'une fonction homographique:}
-On a \[
-	\Delta = \begin{vmatrix}
+On a:
+$$	\Delta = \begin{vmatrix}
 		a & b\\
 		c & d
-	\end{vmatrix}
-\]
-\begin{itemize}
-	\item si $\Delta \geq 0$:
+	\end{vmatrix}$$
 
+\begin{itemize}
+	\center \item si $\Delta \geq 0$:\\
 \begin{tikzpicture}
    \tkzTabInit[lgt=3]
      {$x$ / 1 , $f(x) = \frac{ax+b}{cx+d}$ / 2}
@@ -81,8 +80,7 @@ On a \[
    { -/$$ ,+D-/$$,+/$$}
 \end{tikzpicture}
 
-\item si $\Delta \leq 0$:
-
+\item si $\Delta \leq 0$:\\
 \begin{tikzpicture}
    \tkzTabInit[lgt=3]
      {$x$ / 1 , $f(x) = \frac{ax+b}{cx+d}$ / 2}

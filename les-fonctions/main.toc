@@ -9,5 +9,5 @@
 \contentsline {subsection}{\numberline {III.3}Tableau de variations d'une fonction $x \rightarrow \sqrt {x + a } $}{4}{subsection.3.3}%
 \contentsline {section}{\numberline {IV}Les courbes de fonctions usuelles}{4}{section.4}%
 \contentsline {subsection}{\numberline {IV.1}La courbe du fonction polynome de degrée 2}{4}{subsection.4.1}%
-\contentsline {subsection}{\numberline {IV.2}La courbe du fonction homographique:}{4}{subsection.4.2}%
-\contentsline {subsection}{\numberline {IV.3}La courbe du fonction $x \rightarrow \sqrt {x + a }$}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {IV.2}La courbe du fonction homographique:}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {IV.3}La courbe du fonction $x \rightarrow \sqrt {x + a }$}{6}{subsection.4.3}%

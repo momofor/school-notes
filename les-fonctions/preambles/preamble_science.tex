@@ -11,22 +11,12 @@
 \usepackage{mdframed}
 \usepackage{pgfplots}
 \usepackage{tcolorbox}
+\usepackage{float}
+\usepackage{multicol}
 \hypersetup{
 	colorlinks = true,
 	linkcolor=blue
 }
-
-
-\usepgfplotslibrary{external}
-\tikzexternalize[prefix=cache/]
-
-\pgfplotsset{compat=1.18}
-\renewcommand{\thesection}{\Roman{section}}
-\titleformat{\section}
-{\normalfont\Large\bfseries}{\thesection-}{.5em}{}
-
-\titleformat{\subsection}
-{\normalfont\large\bfseries}{\thesubsection-}{.5em}{}
 
 \usepackage[
     protrusion=true,
@@ -37,16 +27,28 @@
 	{microtype}
 \SetTracking{encoding={*}, shape=sc}{40}
 
-\usepackage[a4paper,bottom=0.75in]{geometry}
+\usepackage[a4paper,bottom=0.75in,right=0.8in,left=0.8in]{geometry}
+
+\usepgfplotslibrary{external}
+\tikzexternalize[prefix=cache/]
+
+\pgfplotsset{compat=1.18,width=15cm}
+\renewcommand{\thesection}{\Roman{section}}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection-}{.5em}{}
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection-}{.5em}{}
 
 
-\newcounter{queestionNumber}
-\setcounter{queestionNumber}{0}
+
+\newcounter{questionNumber}
+\setcounter{questionNumber}{0}
 \newcommand{\qs}[1]{
-	Problem Number: \arabic{queestionNumber}
+	Problem Number: \arabic{questionNumber}
 
 	{#1}
-	\addtocounter{queestionNumber}{1}
+	\addtocounter{questionNumber}{1}
 }
 
 
