@@ -14,90 +14,96 @@
 
 \section{Definitions }
 \subsection{Definition de la fonction numérique}
-\definition{On dit que $f: \RR \rightarrow \RR$ est une fonction numerique si et seulement si 
-$\forall x \in \RR$ admet \textbf{au plus} une image dans $\RR$}
+\definition{On dit que $f: \RR \rightarrow \RR$ est une fonction numerique si et seulement si
+	$\forall x \in \RR$ admet \textbf{au plus} une image dans $\RR$}
 
 \subsection{Definiton de domaine de definition}
 \definition{L'ensemble des elements de $\RR$ qui ont des images par $f$ sont appelés
-l'ensemble de definition de $f$ et on le note $D_f$ ou $D$
-et On a:
-\center $D_f = \set{x \in \RR/f(x) \in \RR}$}
+	l'ensemble de definition de $f$ et on le note $D_f$ ou $D$
+	et On a:
+	\center $D_f = \set{x \in \RR/f(x) \in \RR}$}
 \section{Domaines de definitions de fonctions usuelles}
 \property{
-On a des domaines de définition usuelles comme:
-\begin{itemize}
-	\item $D_f = \RR$ si la fonction est une fonction polynome écrit sous la forme:\\
-$f:x \rightarrow ax^2 + bx + c $
-\item $D_f = \set{x \in \RR/ x \neq 0}$ si la fonction est une fonction quotient écrit sous la forme: \\
-	$f:x \rightarrow \frac{ax+b}{x} $
-\item $D_f = \brac{-a;+\infty}$ si la fonction est une foction écrit sous la forme: \\
-	$f:x  \rightarrow \sqrt{x + a} $
-\item $D_f = \RR - \set{ \frac{-d}{c}} $ si la fonction est une fonction homographique écrit sous la forme:\\
-	$f:x \rightarrow \displaystyle\frac{ax + b}{cx + d} $
-\end{itemize}}
+	On a des domaines de définition usuelles comme:
+	\begin{itemize}
+		\item $D_f = \RR$ si la fonction est une fonction polynome écrit sous la forme:
+
+		      $f:x \rightarrow ax^2 + bx + c $
+		\item $D_f = \set{x \in \RR/ x \neq 0}$ si la fonction est une fonction quotient écrit sous la forme:
+
+		      $f:x \rightarrow \frac{ax+b}{x} $
+		\item $D_f = \brac{-a;+\infty}$ si la fonction est une foction écrit sous la forme:
+
+		      $f:x  \rightarrow \sqrt{x + a} $
+		\item $D_f = \RR - \set{ \frac{-d}{c}} $ si la fonction est une fonction homographique écrit sous la forme:
+
+		      $f:x \rightarrow \displaystyle\frac{ax + b}{cx + d} $
+	\end{itemize}}
 
 \newpage
-\section{Les tableaus de variations des fonctions \\usuelles:}
-\subsection{Tableau de variations de fonction polynome de degrée \\2:}
+\section{Les tableaus de variations des fonctions usuelles:}
+\subsection{Tableau de variations de fonction polynome de degrée 2:}
 \begin{itemize}
-\center \item  Si $x \geq 0$:
+	\item  Si $x \geq 0$:
 
-\begin{tikzpicture}
-   \tkzTabInit[lgt=3]
-     {$x$ / 1 , $f(x) = ax^2 +bx + c$ / 2}
-     {$-\infty$,$\frac{-b}{2a}$,$+\infty$}
-   \tkzTabVar
-   { +/$$ ,-/$f(\frac{-b}{2a})$,+/$$}
-\end{tikzpicture}
+	      \begin{tikzpicture}
+		      \tkzTabInit[lgt=3]
+		      {$x$ / 1 , $f(x) = ax^2 +bx + c$ / 2}
+		      {$-\infty$,$\frac{-b}{2a}$,$+\infty$}
+		      \tkzTabVar
+		      { +/$$ ,-/$f(\frac{-b}{2a})$,+/$$}
+	      \end{tikzpicture}
 
 
-\item Si $x \leq 0$:
+	\item Si $x \leq 0$:
 
-\begin{tikzpicture}
-   \tkzTabInit[lgt=3]
-     {$x$ / 1 , $f(x) = ax^2 +bx + c$ / 2}
-     {$-\infty$,$\frac{-b}{2a}$,$+\infty$}
-   \tkzTabVar
-   { -/$$ ,+/$f(\frac{-b}{2a})$,-/$$}
-\end{tikzpicture}
+	      \begin{tikzpicture}
+		      \tkzTabInit[lgt=3]
+		      {$x$ / 1 , $f(x) = ax^2 +bx + c$ / 2}
+		      {$-\infty$,$\frac{-b}{2a}$,$+\infty$}
+		      \tkzTabVar
+		      { -/$$ ,+/$f(\frac{-b}{2a})$,-/$$}
+	      \end{tikzpicture}
 \end{itemize}
 
 
 \subsection{Tableau de variations d'une fonction homographique:}
 On a:
 $$	\Delta = \begin{vmatrix}
-		a & b\\
+		a & b \\
 		c & d
 	\end{vmatrix}$$
 
 \begin{itemize}
-	\center \item si $\Delta \geq 0$:\\
-\begin{tikzpicture}
-   \tkzTabInit[lgt=3]
-     {$x$ / 1 , $f(x) = \frac{ax+b}{cx+d}$ / 2}
-     {$-\infty$,$\frac{-d}{c}$,$+\infty$}
-   \tkzTabVar
-   { -/$$ ,+D-/$$,+/$$}
-\end{tikzpicture}
+	\item si $\Delta \geq 0$:
 
-\item si $\Delta \leq 0$:\\
-\begin{tikzpicture}
-   \tkzTabInit[lgt=3]
-     {$x$ / 1 , $f(x) = \frac{ax+b}{cx+d}$ / 2}
-     {$-\infty$,$\frac{-d}{c}$,$+\infty$}
-   \tkzTabVar
-   { +/$$ ,-D+/$$,-/$$}
-\end{tikzpicture}
+	      \begin{tikzpicture}
+		      \tkzTabInit[lgt=3]
+		      {$x$ / 1 , $f(x) = \frac{ax+b}{cx+d}$ / 2}
+		      {$-\infty$,$\frac{-d}{c}$,$+\infty$}
+		      \tkzTabVar
+		      { -/$$ ,+D-/$$,+/$$}
+	      \end{tikzpicture}
+
+	\item si $\Delta \leq 0$:
+
+	      \begin{tikzpicture}
+		      \tkzTabInit[lgt=3]
+		      {$x$ / 1 , $f(x) = \frac{ax+b}{cx+d}$ / 2}
+		      {$-\infty$,$\frac{-d}{c}$,$+\infty$}
+		      \tkzTabVar
+		      { +/$$ ,-D+/$$,-/$$}
+	      \end{tikzpicture}
 \end{itemize}
 
 \subsection{Tableau de variations d'une fonction $x \rightarrow \sqrt{x + a } $}
 \center
 \begin{tikzpicture}
-   \tkzTabInit[lgt=3]
-   {$x$ / 1 , $f(x) = \sqrt{x+a}$ / 2}
-     {$-\infty$,$+\infty$}
-   \tkzTabVar
-   { -/$0$ ,+/$$}
+	\tkzTabInit[lgt=3]
+	{$x$ / 1 , $f(x) = \sqrt{x+a}$ / 2}
+	{$-\infty$,$+\infty$}
+	\tkzTabVar
+	{ -/$0$ ,+/$$}
 \end{tikzpicture}
 \section{Les courbes de fonctions usuelles}
 \subsection{La courbe du fonction polynome de degrée 2}
@@ -110,7 +116,7 @@ $$	\Delta = \begin{vmatrix}
 \subsection{La courbe du fonction homographique:}
 \begin{tikzpicture}
 	\begin{axis}[axis lines=middle,ymin = -20,ymax=20,xmin=-20,xmax=20,domain=-20:20]
-	\addplot[samples=300,color=red]{(3*x +3)/(2*x)};
+		\addplot[samples=300,color=red]{(3*x +3)/(2*x)};
 	\end{axis}
 \end{tikzpicture}
 

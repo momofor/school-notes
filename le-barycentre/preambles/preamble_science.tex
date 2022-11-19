@@ -32,8 +32,17 @@
 \usepgfplotslibrary{external}
 \tikzexternalize[prefix=cache/]
 
+\newcounter{definitionNumber}
+\newcounter{propertyNumber}
+\newcounter{exampleNumber}
+\numberwithin{definitionNumber}{section}
+\numberwithin{propertyNumber}{section}
+\numberwithin{exampleNumber}{section}
+
 \pgfplotsset{compat=1.18,width=15cm}
+
 \renewcommand{\thesection}{\Roman{section}}
+
 \titleformat{\section}
 {\normalfont\Large\bfseries}{\thesection-}{.5em}{}
 
@@ -42,14 +51,12 @@
 
 
 
-\newcounter{questionNumber}
-\setcounter{questionNumber}{0}
-\newcommand{\qs}[1]{
-	Problem Number: \arabic{questionNumber}
-
-	{#1}
-	\addtocounter{questionNumber}{1}
-}
+% \newcommand{\qs}[1]{
+% 	Problem Number: \arabic{definitionNumber}
+%
+% 	{#1}
+% 	\addtocounter{definitionNumber}{1}
+% }
 
 
 %% One of the nicest things about LaTeX is you can create custom macros. If  there is a long-ish expression that you will write often, it is nice to give it a shorter command.
@@ -72,14 +79,20 @@
 		\end{proof}
 	\end{mdframed}}
 \newcommand{\definition}[1]{
-	\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=Définition]
+	\addtocounter{definitionNumber}{1}
+	\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=Définition N°\arabic{definitionNumber}]
 		#1
 	\end{tcolorbox}}
 \newcommand{\property}[1]{
-	\begin{tcolorbox}[colback=red!5!white,colframe=blue!50!black,title=propriétés]
+	\addtocounter{propertyNumber}{1}
+	\begin{tcolorbox}[colback=red!5!white,colframe=blue!50!black,title=Propriétés N°\arabic{propertyNumber}]
 		#1
 	\end{tcolorbox}}
-
+\newcommand{\example}[1]{
+	\addtocounter{exampleNumber}{1}
+	\begin{tcolorbox}[colback=red!5!white,colframe=green!50!black,title=Exemple N°\arabic{exampleNumber}]
+		#1
+	\end{tcolorbox}}
 %% A few more important commands:
 
 %% You should start every proof with \begin{proof} and end it with \end{proof}.  
